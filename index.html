@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <form action="result.html" method="GET">
+        <div id="container">
+            <h1 class="signup">Sign Up</h1>
+            <div id="info">
+                <fieldset class="fieldset">
+                    <legend>Your Basic Info</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="User-Name" class="inputs" required>
+
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="User-Email" class="inputs" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="User-Password" class="inputs">
+
+                    <label>Age:</label>
+                    <br>
+                    <input  type="radio" name="Age" value="Under 13" id="age" checked>
+                    <label for="age">Under 13</label>
+                    <br>
+                    <input  type="radio" name="Age" value="Over 13" id="age">
+                    <label for="age">Over 13</label>
+                    
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Your Profile</legend>
+
+                    <label for="bio">Bio:</label><br>
+                    <textarea name="bio" id="bio" cols="40" rows="3" class="inputs"></textarea>
+
+                    <label for="jrole">Job Role:</label>
+                    <select name="Job" id="jrole" class="inputs">
+                        <optgroup label="Web">
+                            <option value="frontend_developer">Front-End Developer</option>
+                            <option value="js_developer">JS Developer</option>
+                            <option value="python_developer">Python Developer</option>
+                            <option value="django_developer">Django Developer</option>
+                            <option value="web_designer">Web Designer</option>
+                            <option value="wordpress_developer">Wordpress Developer</option>
+                        </optgroup>
+                        <optgroup label="Mobile">
+                            <option value="android_developer">Android Developer</option>
+                            <option value="ios_developer">IOS Developer</option>
+                            <option value="mobile_designer">Mobile Designer</option>
+                        </optgroup>
+                        <optgroup label="Business">
+                            <option value="business_owner">Business Owner</option>
+                            <option value="freelancer">Freelancer</option>
+                        </optgroup>
+                    </select>
+
+                    <br>
+                    <label>Interests:</label>
+                    <br>
+                    <input  type="checkbox" name="interest" value="Development" id="int-1">
+                    <label for="int-1">Development</label>
+                    <br>
+                    <input  type="checkbox" name="interest" value="Design" id="int-2">
+                    <label for="int-2">Design</label>
+                    <br>
+                    <input  type="checkbox" name="interest" value="Business" id="int-3">
+                    <label for="int-3">Business</label>
+                    
+                </fieldset>
+
+            </div>
+            <div >
+                <input id="submit" type="submit" value="Sign Up">
+            </div>
+        </div>
+        
+    </form>
+    
+</body>
+</html>
